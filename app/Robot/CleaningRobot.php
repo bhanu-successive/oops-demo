@@ -1,9 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Robot;
 
-require 'app/CarpetFloorCleaningRobot.php';
-require 'app/HardFloorCleaningRobot.php';
+use App\Robot\HardFloorCleaningRobot;
+use App\Robot\CarpetFloorCleaningRobot;
 
 class CleaningRobot
 {

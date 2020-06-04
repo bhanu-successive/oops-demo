@@ -1,14 +1,14 @@
 <?php
 
-namespace App;
+namespace App\Robot;
 
-class HardFloorCleaningRobot
+class CarpetFloorCleaningRobot
 {
     /**
      * Takes 1 sec to cleaning 1 meter square
      * @var int
      */
-    protected $cleaningTimePerMeterSquare = 1;
+    protected $cleaningTimePerMeterSquare = 2;
 
     protected $area;
 

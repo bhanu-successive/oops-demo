@@ -1,8 +1,7 @@
 <?php
 
 namespace App;
-
-require 'app/CleaningRobot.php';
+use App\Robot\CleaningRobot;
 
 class CleaningService
 {
@@ -16,12 +15,8 @@ class CleaningService
         //parent::__construct($floor, $area);
         $this->area = $area;
         $this->floor = $floor;
-        echo $floor;
-        echo " --- ";
-        echo $area;
         $this->initiateRobot();
         $this->startCleaning();
-        echo "sdf";exit;
     }
 
     protected function initiateRobot()
@@ -31,7 +26,6 @@ class CleaningService
 
     protected function startCleaning()
     {
-        echo " .... Start Cleaning ....\n";
         $this->robot->startCleaning();
 
     }
